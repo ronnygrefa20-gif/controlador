@@ -14,8 +14,8 @@ public class ExampleMVC {
 
     public static void main(String[] args) {
         View pepito = new View();
-        pepito.setN1("hb");
-        pepito.setN2("uh");
+        pepito.setN1("12");
+        pepito.setN2("10");
         pepito.boton();
         
         

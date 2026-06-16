@@ -4,7 +4,11 @@
  */
 package ec.edu.espoch.example.mvc.controller;
 
+
+
+import ec.edu.espoch.example.mvc.Model.Acceso.Calculadoras;
 import ec.edu.espoch.example.mvc.Model.Calculadora;
+import ec.edu.espoch.example.mvc.Model.interfaces.InterCalculadora;
 import ec.edu.espoch.example.mvc.View.View;
 
 /**
@@ -21,16 +25,19 @@ public class ControllerCalculadora {
         calculadora = new Calculadora();
         this.view = view;
     }
-    private Calculadora cal = new Calculadora();
 
+    InterCalculadora metodosCalcu = new Calculadoras();
+    
     public void controller() {
         try {
             double n1 = Double.parseDouble(view.getN1());
             double n2 = Double.parseDouble(view.getN2());
             calculadora.setN1(n1);
             calculadora.setN2(n2);
-            double resultado = calculadora.sumar();
+            
+            double resultado=metodosCalcu.sumar(calculadora);
             view.mostrar(resultado);
+            
         } catch (Exception e) {
             view.mostrarerror();
         }

@@ -9,7 +9,7 @@ package ec.edu.espoch.example.mvc.Model;
  * @author Ronny G
  */
 public class Calculadora {
-
+    
     private double n1;
     private double n2;
 
@@ -43,4 +43,3 @@ public class Calculadora {
         return n1 + n2;
     }
 }
-

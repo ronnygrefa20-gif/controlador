@@ -1,4 +1,6 @@
 ec\edu\espoch\example\mvc\controller\ControllerCalculadora.class
 ec\edu\espoch\example\mvc\View\View.class
 ec\edu\espoch\example\mvc\ExampleMVC.class
+ec\edu\espoch\example\mvc\Model\Acceso\Calculadoras.class
+ec\edu\espoch\example\mvc\Model\interfaces\InterCalculadora.class
 ec\edu\espoch\example\mvc\Model\Calculadora.class
