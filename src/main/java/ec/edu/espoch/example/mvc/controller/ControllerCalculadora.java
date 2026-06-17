@@ -11,10 +11,7 @@ import ec.edu.espoch.example.mvc.Model.Calculadora;
 import ec.edu.espoch.example.mvc.Model.interfaces.InterCalculadora;
 import ec.edu.espoch.example.mvc.View.View;
 
-/**
- *
- * @author Ronny G
- */
+
 public class ControllerCalculadora {
   
 
